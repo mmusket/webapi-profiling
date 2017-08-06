@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 using WebApi_Miniprofiler_Swagger.Filters;
 
 namespace WebApi_Miniprofiler_Swagger
@@ -20,7 +17,6 @@ namespace WebApi_Miniprofiler_Swagger
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
 
             config.Filters.Add(new WebApiProfilingActionFilter());
         }

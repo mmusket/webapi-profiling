@@ -31,7 +31,6 @@ namespace WebApi_Miniprofiler_Swagger.Controllers
             }
         }
 
-
         [Route("notfound")]
         public IHttpActionResult NothingToSeeHere()
         {

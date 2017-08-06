@@ -15,8 +15,6 @@ namespace WebApi_Miniprofiler_Swagger
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
 
-
-
         protected void Application_BeginRequest()
         {
             MiniProfiler.Start();
